@@ -2,19 +2,155 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: William Ma
+EMAIL: qijunm@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
+  <meta name="author" content="William Ma">
   <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>William Ma Personal Portfolio</title>
 </head>
 <body>
+  <div id="container">
+    <h2> Introduction </h2>
+    <div id="introduction" class="subdiv">
+      <p> Welcome! My name is William </p>
+      <p> I'm a Junior Majoring in CS at UCI </p>
+      <p> I love Programming, Reading, and Games :) </p>
+      <p> This Portfolio will introduce my past work </p>
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/University_of_California%2C_Irvine_seal.svg" alt="Logo of the School UCI">
+    </div>
+
+
+    <br>
+    <hr>
+    <h2> Overview </h2>
+
+
+    <div id="overview">
+      <div id="education" class="subdiv">
+        <h3> Education </h3> <a href="#coursework-div"> Details </a>
+        <p> University of California, Irvine (B.S. in Computer Science) - GPA: 3.70 </p>
+        <p> Crean Lutheran High School - GPA: 3.89</p>
+      </div>
+      <div id="experiences" class="subdiv">
+        <h3> Experiences </h3> <a href="#experiences-div"> Details </a>
+        <p> Software Developer - Biophysical Data Analysis Research Lab UCI</p>
+        <p> Research Assistant - Medical Research Lab UCI </p>
+        <p> Coding Tutor - Coding Minds Academy </p>
+      </div>
+      <div id="projects" class="subdiv">
+        <h3> Projects </h3> <a href="#projects-div"> Details </a>
+        <p> Bacteria Growth Stage Detection Model </p>
+        <p> Machine Learning Price Predictor for Used Car </p>
+        <p> Interactive Map of Historical Structures for SH, China </p>
+      </div>
+      <div id="technical-skills" class="subdiv">
+        <h3> Technical Skills </h3>
+        <table id="technical-skills-table">
+          <caption> Table of Technical Skills </caption>
+          <thead> 
+            <tr>
+              <th> Languages: </th>
+              <th> Developer Tools: </th>
+              <th> Libraries: </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Python </td>
+              <td> Pycharm </td>
+              <td> Numpy </td>
+            </tr>
+            <tr>
+              <td> HTML/CSS </td>
+              <td> Github </td>
+              <td> Chartjs </td>
+            </tr>
+            <tr>
+              <td> C++ </td>
+              <td> Cmake </td>
+              <td> SQL </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <h2> Details </h2>
+
+
+    <div id="details">
+      <div id="coursework-div" class="subdiv">
+        <h3> UCI Coursework - Machine Learning</h3>
+        <p> Topics Covered: Bayesian Classifer, Linear Regression, Logistic Regression, Decision Trees, etc... </p>
+        <p> Link to Course Page: <a href="https://www.stephanmandt.com/courses/ML-and-DM-2022.html"> CS178 </a></p>
+      </div>
+      <div class="subdiv">
+        <h3> UCI Coursework - AI in BioMed</h3>
+        <p> Topics Covered: Covolutioanl Neural Networks, Reinforcement Learning, Clustering, Building Biomed applicable projects, etc...</p>
+        <p> Link to Course Page: <a href="https://ics.uci.edu/~xhx/courses/CS284A/"> CS184A </a></p>
+      </div>
+      <div class="subdiv">
+        <h3> UCI Coursework - Data Structures</h3>
+        <p> Topics Covered: Sorting Algorithms, Graph Algorithms, Tree Algorithms, Linked Lists, Stacks, Queues, etc...</p>
+        <p> Link to Course Page: <a href="https://ics.uci.edu/~pattis/ICS-46/handouts/syllabus/index.html"> ICS46 </a></p>
+      </div>
+
+
+      <div id="experiences-div" class="subdiv">
+        <h3> Experiences - Software Developer </h3>
+        <p> Led 4-person team to develop web application that automated cleaning and visualizing of blood-flow/electrical-flow data from lab instruments, reducing manual data cleaning time by over 90 percent.</p>
+        <p> Analyzed blood-flow/electrical-flow data from 10 human subjects, and tuned predictive machine learning models to predict blood-flow/electrical-flow trends across different activities.</p>
+        <p> Managed data collection process for the 10 human subjects: designing the experiment process, scheduling measurement time for subjects, and operating biological measurement equipment. </p>
+      </div>
+      <div class="subdiv">
+        <h3> Experiences - Research Assistant</h3>
+        <p>Used Python to clean, analyze, and visualize large biological datasets with 300,000+ cells, converting noisy raw data into structured research-grade data assessment with insights on distribution and probability.</p>
+        <p>Used NumPy, Pandas, and Matplotlib to compose modular, library integrated code with flexibility and scalability.</p>
+        <p>Implemented new algorithm that increases speed of name-type mapping of large cell datasets exponentially</p>
+      </div>
+      <div class="subdiv">
+        <h3> Experiences - Coding Tutor</h3>
+        <p>Teaches K-12 Students Programming Lessons of their interest (Currently have taught Python, Web Project Building, USACO Competitive Programming)</p>
+
+      </div>
+
+
+      <div id="projects-div" class="subdiv">
+        <h3> Projects - Bacteria Growth Stage Detection </h3>
+        <p>Implemented YOLO ML Detection Model, and fine tuned its hyper-parameters to detect growth stage of bacteria</p>
+        <p>Analyzed and Compared results from different Models: YOLO / CNN / UNet and visualized results</p>
+        <p>Used Git to collaborate in team of 3 to deliver improved prediction results better than current standard</p>
+      </div>
+      <div class="subdiv">
+        <h3> Projects - ML Price Predictor for Used Cars </h3>
+        <p>Called APIs to extract mileage, brand, and other key features of 50000 used-cars on current market</p>
+        <p>Performed cleaning and encoding on raw data, transforming data to become machine-learning compatible</p>
+        <p>Analyzed used-car data with encoding methods (One-hot encoding, target encoding) and machine learning models (Decision tree, Gradient Boosting). Evaluating accuracy of different encodings and models.</p>
+      </div>
+      <div class="subdiv">
+        <h3> Projects - Map of Historical Structures for SH, China </h3>
+        <p>Used Python to request and organize data of 2000+ historical structure from digital open source libraries</p>
+        <p>Developed front-end web application using HTML/CSS/JS</p>
+        <p>Used Map API, Translate API to build main interfaces and enable accessibility</p>
+        <p>Used Git, GitHub, and Version Control to collaborate with 3 others</p>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
   <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
